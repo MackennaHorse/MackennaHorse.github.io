@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+<title>Portfolio</title>
+<link rel="stylesheet" type="text/css" href="portfoliostyle.css"  />
+<link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet"> 
+</head>
+<body>
+<nav>
+<p><a href="#about">About</a> 
+    <a href="#p1">Project 1</a> 
+    <a href="#p2">Project 2</a> 
+	<a href="#p3">Project 3</a></p>
+</nav>
+<header>
+<IMG SRC="horseleft.png" ALT="Horse silloutte" WIDTH=20% HEIGHT=20%>
+<h1> Creative Computing</h1>
+<p> Mackenna Minstrell, 9 Aqua</p>
+</header>
+
+<div class="projects" id="about">
+<p class="about">I choose the subject Creative Computing because I find coding really fun and what will become an important life skill in a devoloping world and work force. 
+It is incredibly interesting to me to find out how the world around us works, not just the science and social sciences, but now also the way computers and tecnologies comunicate and intergrate into our lives. 
+I don't have a lot of experience, but I am willing to work hard to catch up to my classmates. 
+I enjoy a challenge and logical thinking and problem solving. 
+My favourite part of Digital Tecnology last year was learning coding; both HTML and CSS and Python. 
+This year I looking forward to practising and building on these skills from last year.</p>
+<IMG SRC="Binworld.png" ALT="globe made of binery" WIDTH=25% HEIGHT=25%>
+</div>
+
+<div class="projects" id="p1">
+<button class="collapsible">Project 1- HTML and CSS</button>
+<div class="content">
+ <p> Our first project of the year was HTML and CSS and Networks. 
+ We spent the first lesson learning Binary and Hexadecimal then we learnt about how computers and networks use Binary to comunicate and send messages. 
+ I found this really interesting beacuse it was all things I never knew existed and happened all around me everyday. 
+ We quickly moved on to create our own website, without much guidence using our knowlage from years prior. 
+ Our task was to create a Portfolio Website to store our work throughout the year. 
+ We first looked at a website we liked for ideas to make our own website the best it could be. 
+ I looked at the <a href="https://www.wwf.org.au/#gs.ys2UjLcS">World Wildlife Fund</a> website and my main two takeaways were, try and keep the color sceme simple and not make it too busy and that it was interesting to be able to browse and scroll down through the website. 
+ I started pretty simple, make a title, header and div's. 
+ I secoundly moved on to create a navigation bar, like on the WWF website, to find your way easily to the different projects. 
+ After fixing up the asthetics I still had a few more lessons. 
+ I decided to try and make collapsable buttons to store my projects. 
+ I asked Mr Morffew and with his help found a page on <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible">W3Schools</a> explaining how to do this. 
+ After implimenting this I re-fixed the asthetics to incorperate this element. 
+ I enjoyed this task, I love coding and a website is a very practical application as well as fun and creative. 
+ The pictures below show a photo of my HTML (left) and CSS (right), unfinished, from during my project.<p/>
+<IMG SRC="HTML.png" ALT="html code for this website" WIDTH=50% HEIGHT=50%>
+<IMG SRC="CSS.png" ALT="css code for this website" WIDTH=25.5% HEIGHT=25.5%>
+</div>
+</div>
+
+<div class="projects" id= "p2">
+<button class="collapsible">Project 2</button>
+<div class="content">
+ <p> Project is yet to be started<p/>
+<IMG SRC="the picture" ALT="Add picture" WIDTH=50% HEIGHT=50%>
+<IMG SRC="the picture" ALT="Add picture" WIDTH=25.5% HEIGHT=25.5%>
+</div>
+</div>
+
+<div class="projects" id= "p3">
+<button class="collapsible">Project 3</button>
+<div class="content">
+ <p> Project is yet to be started<p/>
+<IMG SRC="the picture" ALT="Add picture" WIDTH=50% HEIGHT=50%>
+<IMG SRC="the picture" ALT="Add picture" WIDTH=25.5% HEIGHT=25.5%>
+</div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+</body>
+</HTML>
